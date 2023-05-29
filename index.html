@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo WEB y de apps</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <section id="home" class="home">
+
+    </section>
+
+    <header class="encabezado">
+        <div>
+            <a href="#">
+                <img src="imagenes/Sercarru.png" alt="Logo" class="logo">
+            </a>
+        </div>
+        <div id="toggle-menu" class="toggle-menu">
+            <img src="imagenes/menuH.svg" alt="">
+        </div>
+
+        <nav class="nav">
+            <ul class="menu">
+                <li>
+                    <img class="img_menu" src="imagenes/home.svg" alt=""><a href="#home"
+                        class="menu_nav_link">Inicio</a>
+                </li>
+
+                <li>
+                    <img class="img_menu" src="imagenes/develop.svg" alt=""><a href="#trabajos" class="menu_nav_link"
+                        id="menu_nav_link">Desarrollo WEB</a>
+                </li>
+
+                <li>
+                    <img class="img_menu" src="imagenes/pc.svg" alt=""><a href="#mantenimiento"
+                        class="menu_nav_link">Mantenimiento</a>
+                </li>
+                <li>
+                    <img class="img_menu" src="imagenes/teacher.svg" alt=""><a href="#docencia" class="menu_nav_link"
+                        id="menu_nav_link">Docencia</a>
+                </li>
+
+                <li>
+                    <img class="img_menu" src="imagenes/aboutus.svg" alt=""><a href="#nosotros"
+                        class="menu_nav_link">Nosotros</a>
+                </li>
+
+                <li>
+                    <a href="#cta" class="contacto">
+                        <button class="menu_nav_link">
+                            <img src="imagenes/arroba.svg" alt="">Contacto
+                        </button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="logo_saludo">
+        <img src="imagenes/SCR.png" alt="" class="img_logo">
+        <div class="saludo">
+            <p class="saludo_txt">Desarrollo Web y de aplicaciones</p>
+        </div>
+    </section>
+<!--
+---------------------------------------------------------------
+------------------------ INICIO -------------------------------
+--------------------------------------------------------------- 
+-->
+    <section>
+        <div id="inicio" class="inicio">
+            <div class="inicio_top">
+                <p>Diseñando por ti, diseñando para ti...</p>
+            </div>
+            <div class="tarjetas">
+                <article class="article_inicio"><!--  //CARD -->
+                    <div >
+                        <img class="articles_img" src="/imagenes/article1.jpg" alt="">
+                    </div>
+                    <div class="articles_txt">
+                        <p>En la actualidad,es difícil imaginar un mundo sin internet. Navegar en él es casi lo mismo que salir a dar un paseo, ir de compras, conocer gente hasta hacer amistades. Nada de esto sería posible si no existieran los sitios web y nosotros los hacemos por tí.</p>
+                    </div>
+                </article>
+                <article class="article_inicio">
+                    <div class="articles_img">
+                        <img class="articles_img" src="/imagenes/article2.jpg" alt="">
+                    </div>
+                    <div class="articles_txt">
+                        <p>Diseñamos a tu gusto y acorde a tus necesidades. Esta es una de las mejores formas de ofrecer tus servicios, productos y hasta expresar tus ideas,  para llegar a más clientes, y hasta a tus familiares y amigos.</p>
+                    </div>
+                </article>
+                <article class="article_inicio">
+                    <div class="articles_img">
+                        <img class="articles_img" src="/imagenes/article3.jpg" alt="">
+                    </div>
+                    <div class="articles_txt">
+                        <p>Las opciones que te ofrecemos se adaptan a tus necesidades, desde una landingpage sencilla, hasta un sitio completo con la cantidad de páginas que necesites, con animaciones e imágenes atractivas, para que transmitas tus ideas, vendas tus productos o muestres lo que quieras.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+    </section>
+
+<!--
+---------------------------------------------------------------
+--------------------- DESARROLLO WEB --------------------------
+--------------------------------------------------------------- 
+-->
+    <section class="desarrollo_web" id="trabajos">
+        <a name="trabajos" id="trabajos"></a>
+        <div class="desarrolloW"></div>
+        <p class="desarrolloW">Desarrollo WEB</p>
+
+    </section>
+<!--
+---------------------------------------------------------------
+--------------------- DESARROLLO WEB --------------------------
+--------------------------------------------------------------- 
+-->
+<section class="mtto" id="mantenimiento">
+    <a name="trabajos" id="trabajos"></a>
+    <div class="desarrolloW"></div>
+    <p class="desarrolloW">Mantenimiento de computadoras</p>
+
+</section>
+
+<!--
+---------------------------------------------------------------
+-------------------------- DOCENCIA ---------------------------
+--------------------------------------------------------------- 
+-->
+    <section class="docente" id="docencia">
+
+        <p class="docenteW">Docencia</p>
+
+    </section>
+
+    <section class="mantenimiento" id="mantenimiento">
+
+        <p class="manttoW">Mantenimiento</p>
+
+    </section>
+<!--
+---------------------------------------------------------------
+------------------------- NOSOTROS ----------------------------
+--------------------------------------------------------------- 
+-->
+
+    <section class="nosotros" id="nosotros">
+
+        <p class="nosotorsoW">Nosotros</p>
+
+    </section>
+<!--
+---------------------------------------------------------------
+----------------------- FORMULARIO ----------------------------
+--------------------------------------------------------------- 
+-->
+    <section class="cta" id="cta">
+        <div class="formulario">
+            <form class="cliente" action="https://google.com"> <!--Sólo como ejemplo-->
+                <legend class="tit_form">ESCRÍBENOS: ¿CÓMO TE PODEMOS AYUDAR?</legend>
+                <label for="control_nombre">Nombre</label>
+                <input type="text" id="control_nombre" required>
+                <label for="correo">Correo electrónico</label>
+                <input type="text" id="correo" required>
+
+
+                <label for="">Elige el servicio requerido<br></label>
+                <select>
+                    <option value="">Desarrollo Web</option>
+                    <option value="">Reparación de computadoras</option>
+                    <option value="">Asesoría en Office</option>
+                    <option value="">Automatización </option>
+                </select>
+
+                <label for="Mensaje-cliente">Mensaje</label>
+                <textarea id="Mensaje-cliente" placeholder="Escribe aquí en qué te podemos ayudar..."
+                    required></textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+    </section>
+</body>
+<!--
+---------------------------------------------------------------
+-----------------------------FOOTER----------------------------
+--------------------------------------------------------------- 
+-->
+<footer class="pie">Sergio Carreón Ruiz &copy
+    <div class="img_footer">
+        <a href="https://twitter.com/scarreonr">
+            <img class=logo_redSoc src="./imagenes/Twitter1.png" alt="Twitter">
+        </a>
+        <a href="https://www.youtube.com/@sergiocarreonruiz7183">
+            <img class=logo_redSoc src="./imagenes/Youtube.png" alt="Youtube">
+        </a>
+    </div>
+</footer>
+
+</html>

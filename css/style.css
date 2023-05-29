@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@200;300;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    cursor: pointer;
+    height: auto;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.761);
+}
+
+.logo:hover {
+    scale: 1.5;
+}
+
+li,a,.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Mali', cursive;
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+}
+
+.encabezado {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 15%;
+    background: rgb(3, 3, 87);
+}
+
+.img_menu, .logo_redSoc{
+    display: block;
+    margin: 0 auto;
+    height: 25px;
+}
+
+.menu {
+    width: max-content;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 0 15px;
+    align-items: center;
+}
+
+.menu li:hover {
+    color: aqua;
+    scale: 1.2;
+}
+
+.menu_nav_link {
+    border-radius: 5px;
+    padding: 5px 5px;
+}
+
+.menu_nav_link:hover {
+    background-color: rgb(0, 34, 255);
+    transition: 0.3s;
+
+}
+
+button.menu_nav_link {
+    display: flex;
+    align-items: center;
+    padding: 7px 15px;
+    background-color: #0064bb;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.761);
+    color: #fff;
+}
+
+button.menu_nav_link:hover {
+    background-color: rgb(17, 0, 255);
+    scale: 1.25;
+
+}
+
+.menu_responsive,
+.toggle-menu {
+    display: none;
+}
+
+/* //////////////////////////////////////////////////////////// */
+.logo_saludo {
+    height: 225px;
+    display: grid;
+    position: relative;
+    top: 90px;
+    background-image: url(../imagenes/DiseñoWebCódigo4.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    grid-template-columns: repeat(14, 50px);
+    grid-template-rows: repeat(10, 20px);
+    background-color: rgb(3, 3, 87);
+    justify-content: center;
+
+}
+
+.img_logo {
+    width: 125px;
+    height: auto;
+    border-radius: 50%;
+    grid-column: 2/5;
+    grid-row: 3/9;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.761);
+    border: 5px rgb(255, 153, 0) ridge;
+    z-index: 2;
+}
+
+.saludo {
+    font-family: 'Mali';
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 8, 255, 0.75);
+    grid-column: 4/13;
+    grid-row: 4/9;
+    z-index: 1;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.761);
+    border: 5px rgb(0, 30, 255) solid;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5px 1em;
+}
+
+/* //////////////////// INICIO //////////////////////////// */
+
+
+.inicio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../imagenes/fondo1a.png);
+    background-size: cover;
+    background-position:auto;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 90px;
+    width: 100%;
+    height: auto;
+    font-size: 50px;
+    font-family: 'Mali';
+    color: rgb(8, 3, 85);
+    background-color: rgb(255, 255, 255);
+}
+
+.inicio_top{
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+    height: 90px;
+    background-color: #0086fa;
+    color: #fff;
+    padding: 30px;
+}
+
+.tarjetas{
+    width: 100%;
+    display: flex;
+    margin: 75px;
+    justify-content: center;
+    max-width: 1100px;
+    gap: 30px;
+}
+.articles_img{
+    display: flex;
+    margin: 0 auto;
+    width: 200px;
+    border-radius: 90px;
+}
+
+.articles_txt{
+    font-size: 0.5em;
+    font-weight: 300;
+    color: #fff;
+    width:300px;
+    height: 600px;
+    background-color: rgba(8, 0, 255, 0.491);
+    border-radius: 15px;
+    padding: 25px 20px;
+    margin-top: -25px;
+    border: 3px solid rgb(70, 57, 248);
+    box-shadow: 0px 0px 8px rgba(116, 153, 255, 0.9);
+    padding-top: 40px;
+
+}
+/* //////////////////// DESARROLLO WEB //////////////////////////// */
+
+.desarrollo_web {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 10%;
+    background-color: blue;
+    color: #fff;
+    font-family: 'Mali', cursive;
+    font-weight: 300;
+    font-size: 75px;
+}
+
+/* //////////////////// DOCENTE //////////////////////////// */
+
+.docente {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 10%;
+    width: 100%;
+    height: 600px;
+    background-color:rgb(255, 255, 255);
+}
+
+/* //////////////////// MANTENIMIENTO //////////////////////////// */
+
+.mtto {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 10%;
+    width: 100%;
+    height: 600px;
+    background-color:  blue;
+}
+
+/* //////////////////// NOSOTROS //////////////////////////// */
+
+.nosotros {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 10%;
+    width: 100%;
+    height: 600px;
+    background-color:  rgb(255, 255, 255);
+}
+
+/* //////////////////// CONTACTO CTA //////////////////////////// */
+
+.cta{
+    display: block;
+    justify-content: space-around;
+    padding: 30px 10%;
+    background-color:  rgb(255, 119, 0); 
+}
+
+form{
+    width: 100%;
+    z-index: 0;
+    font-family: 'Mali';
+  }
+  
+  .formulario{
+    width: 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+    padding: 20px 0 20px;
+  }
+
+  .tit_form{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Mali';
+    font-size: 20px;
+    font-weight: 500;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    background-color: #ff7700;
+    box-shadow: 8px 8px 8px rgba(252, 166, 166, 0.761)
+  }
+  
+  .cliente{
+    width: 90%;
+    display:grid;
+    margin:0 auto;
+    padding: 3%;
+    border-color: rgb(8, 0, 255)!important;
+    background-color: #01107189;
+    border: 7px;
+    border-style: ridge;
+    border-radius: 15px;
+    box-shadow: 8px 8px 8px rgba(1, 21, 43, 0.761);
+    max-width: 600px;
+    color: #fff
+  }
+  
+  input, select, textarea{
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-width: 100%;
+    padding-right: 1%;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    padding: 1%;
+    border: 2px rgb(0, 0, 0) solid;
+    border-radius: 7px;
+  }
+  
+  input[type="submit"]{
+    width: 75%;
+    margin-bottom: 25px;
+    margin-top: 7%;
+    height: 35px;
+    background: #ff7700;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: 0px 0px 10px rgb(185, 220, 251);
+  }
+  
+  label{
+    display: block;
+    width: 100%;
+    margin-bottom: 1%;
+  }
+  
+  input[type="submit"]:hover{
+    background: #990000;
+    cursor: pointer;
+    color: rgb(238, 255, 0);
+  }
+  
+  textarea{
+    max-width: 100%;
+    min-height: 75px;
+    max-height: 200px;
+  }
+  
+  input[type="text"]:hover, select:hover, textarea:hover{
+    background-color: rgb(135, 180, 253);
+  }
+/* //////////////////// FOOTER //////////////////////////// */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 10%;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(0, 0, 54);
+}
+
+.pie{
+    width: 100px;
+    flex-flow:wrap;
+    justify-content:space-around;
+    width: 100%;
+    color:rgb(255, 255, 255) ;
+    padding: 10px;
+    margin: 0 auto;  
+  }
+
+  .img_footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+
+/* //////////////////////////////////////////////////////////// */
+/* //////////////////// RESPONSIVE TABLETAS /////////////////// */
+/* //////////////////////////////////////////////////////////// */
+
+@media screen and (max-width:768px) {
+
+    body {
+        padding-top: 90px 20px 0px;
+    }
+
+    .encabezado {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        height: 80px;
+        justify-content: space-between;
+        background: rgb(0, 0, 55);
+    }
+
+    .logo {
+        display: block;
+        position: absolute;
+        width: 40px;
+        top: 20px;
+        left: 50px;
+    }
+
+    .menu {
+        width: 100%;
+        height: calc(100% - 80px);
+        left: 0;
+        display: flex;
+        position: fixed;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(123, 0, 25, 0.68);
+        backdrop-filter: blur(10px);
+        padding: 30px 0;
+        top: 80px;
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left ease 0.5s;
+    }
+
+    .menu_oculto {
+        left: 0;
+    }
+
+    .menu_nav_link {
+        border-radius: 5px;
+        padding: 1px 5px;
+    }
+
+    img_footer {
+        height: 30px;
+        width: 100%;
+    }
+
+    li {
+        margin-top: 25px;
+        line-height: 25px;
+    }
+
+    button {
+        margin-top: 15px;
+    }
+
+    .toggle-menu {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 30px;
+        z-index: 6;
+        cursor: pointer;
+    }
+
+    .img_logo {
+        width: 100px;
+        height: auto;
+        border-radius: 50%;
+        grid-column: 7/9;
+        grid-row: 2/7;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.761);
+        border: 5px rgb(255, 153, 0) ridge;
+        z-index: 2;
+    }
+
+    .logo_saludo {
+        width: 100%;
+        top: 80px;
+        height: 300px;
+        display: grid;
+        position: relative;
+        grid-template-columns: repeat(14, 50px);
+        grid-template-rows: repeat(12, 25px);
+        z-index: -1;
+    }
+
+    .saludo {
+        grid-column: 3/13;
+        grid-row: 7/11;
+        border-radius: 10px;
+    }
+
+    .desarrollo_web {
+        margin-top: 450px;
+    }
+}
+
+/* //////////////////////////////////////////////////////////// */
+/* //////////////////// RESPONSIVE CELULAR //////////////////// */
+/* //////////////////////////////////////////////////////////// */
+@media screen and (max-width:420px) {
+    .encabezado {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        height: 75px;
+        top: 0;
+        left: 0;
+        align-items: center;
+        justify-content: space-around;
+        padding: 30px;
+        background: rgb(3, 3, 87);
+    }
+
+    .logo_saludo {
+        height: 200px;
+        display: grid;
+        position: relative;
+        top: 80px;
+        grid-template-columns: repeat(11, 30px);
+        grid-template-rows: repeat(10, 20px);
+        background-color: rgb(3, 3, 87);
+        justify-content: center;
+    
+    }
+    .img_logo {
+        width: 75px;
+        height: auto;
+        border-radius: 50%;
+        grid-column: 5/8;
+        grid-row: 2/7;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.761);
+        border: 5px rgb(255, 153, 0) ridge;
+        z-index: 2;
+    }
+    .saludo {
+        font-family: 'Mali';
+        font-size: 1rem;
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+        justify-content: center;
+        background-color: rgba(0, 8, 255, 0.75);
+        grid-column: 2/11;
+        grid-row: 7/9;
+        z-index: 5;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.761);
+        border: 5px rgb(0, 30, 255) solid;
+        padding-bottom: 3em;
+    }
+
+    .logo {
+        width: 25px;
+        top: 30px;
+        left: 50px;
+    }
+
+
+
+}
