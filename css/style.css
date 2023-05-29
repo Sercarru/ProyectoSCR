@@ -193,6 +193,7 @@ button.menu_nav_link:hover {
     margin: 0 auto;
     width: 200px;
     border-radius: 90px;
+    box-shadow: 0px 0px 8px rgba(116, 153, 255, 0.9);
 }
 
 .articles_txt{
