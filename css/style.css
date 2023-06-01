@@ -186,7 +186,7 @@ button.menu_nav_link:hover {
     margin: 75px;
     justify-content: center;
     max-width: 1100px;
-    gap: 30px;
+    gap: 15px;
 }
 .articles_img{
     display: flex;
@@ -197,11 +197,11 @@ button.menu_nav_link:hover {
 }
 
 .articles_txt{
-    font-size: 0.5em;
+    font-size: 0.4em;
     font-weight: 300;
     color: #fff;
-    width:300px;
-    height: 600px;
+    width:250px;
+    height: 500px;
     background-color: rgba(8, 0, 255, 0.491);
     border-radius: 15px;
     padding: 25px 20px;
@@ -217,16 +217,70 @@ button.menu_nav_link:hover {
     width: 100%;
     height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 100px;
     padding: 30px 10%;
     background-color: blue;
-    color: #fff;
-    font-family: 'Mali', cursive;
-    font-weight: 300;
-    font-size: 75px;
+    background-image: url(/imagenes/fondoDisWeb.jpg);
 }
 
+.DevWebTop{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    width: 100%;
+    height: 150px;
+    top: -100px;;
+    background-color: #0080ff;
+    color: #fff;
+    font-family: 'Mali';
+    font-size: 50px;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+.tarjetasInfoWeb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+    height: 700px;
+    gap: 30px;
+    font-family: 'Mali';
+    font-weight: 300;
+    font-size: 1.5em;
+    color: #ffffff;
+
+}
+ .ArticleinfoWeb{    
+    background-color: #7a5fe750;
+    width: 100%;
+    height: 725px;
+    padding: 10px;
+    max-width: 400px;
+    border-radius: 15px;
+ }
+ .infoWebTxt{
+    padding: 25px;
+ }
+ .imgInfoWeb{
+    display: block;
+    position: absolute;
+    justify-content: center;
+    padding: 15px;
+    max-width: 350px;
+    height: 400px;
+    border-radius: 50px;
+}
+
+ .imgInfoWeb:hover{
+    transition-timing-function: ease-in;
+    transition:  2s;
+    transform: translateY(75%);
+ }
 /* //////////////////// DOCENTE //////////////////////////// */
 
 .docente {
@@ -550,10 +604,15 @@ footer {
     padding-top: 40px;
 }
 
-    .desarrollo_web {
-        margin-top: 450px;
-    }
 
+}
+
+@media screen and (max-width:610px) {
+    .articles_txt{
+        font-size: 0.3em;
+        width:180px;
+        height:450px;
+    }
 }
 
 /* //////////////////////////////////////////////////////////// */
