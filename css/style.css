@@ -254,7 +254,7 @@ button.menu_nav_link:hover {
     margin-top: 100px;
     padding: 5px;
     background-color: rgb(0, 0, 60);
-    background-image: url(/imagenes/fondoDisWeb.jpg);
+    background-image: url(../imagenes/fondoDisWeb.jpg);
 }
 
 .DevWebTop {
@@ -320,7 +320,7 @@ button.menu_nav_link:hover {
 
 /* //////////////////// MANTENIMIENTO //////////////////////////// */
 .mtto {
-    background-image: url(/imagenes/TecladoLapTop.jpg);
+    background-image: url(../imagenes/TecladoLapTop.jpg);
     width: 100%;
     height: 950px;
     display: flex;
