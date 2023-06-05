@@ -221,7 +221,6 @@ button.menu_nav_link:hover {
 
     100% {
         rotate: -5grad;
-        ;
     }
 
 }
@@ -319,23 +318,30 @@ button.menu_nav_link:hover {
 }
 
 /* //////////////////// MANTENIMIENTO //////////////////////////// */
+.mtto_section {
+    height: 1950px;
+}
+
 .mtto {
     background-image: url(../imagenes/TecladoLapTop.jpg);
     width: 100%;
-    height: 950px;
-    display: flex;
+    height: 600px;
+    display: block;
     justify-content: center;
     margin: 0 auto;
     margin-top: 150px;
     padding: 5px;
     background-color: rgb(0, 0, 60);
+
 }
 
-.mttoPCsTOP{
+.mttoPCsTOP,
+.galería_Top {
     display: flex;
     position: relative;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
     z-index: 0;
     width: 90%;
     max-width: 1100px;
@@ -347,22 +353,207 @@ button.menu_nav_link:hover {
     font-size: 40px;
     font-weight: 600;
     border-radius: 40px;
+
 }
 
+.mtto_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    margin: 0 auto;
+    width: 900px;
+    height: 800px;
+    background-color: #ff7700;
+    top: -400px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+    margin-bottom: 50px;
+    border: solid 5px rgb(255, 255, 255);
+}
 
+.mtto_img1 {
+    display: flex;
+    justify-content: flex-end;
+    width: 450px;
+    height: 1000px;
+}
+
+.mtto_img2 {
+    display: block;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.mtto_txt {
+    display: flex;
+    width: 450px;
+    height: 100%;
+    font-family: 'Mali';
+    font-size: 1.7em;
+    color: #ffffff;
+    padding: 35px 50px 35px;
+    font-weight: 600;
+    text-shadow: #f50000;
+}
 
 /* //////////////////// GALERÍA //////////////////////////// */
 
 .galeria {
-    width: 100%;
-    height: 100vh;
+    margin-top: 100px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 30px 10%;
+    flex-direction: column;
+    background-color: rgb(0, 3, 82);
+    height: 980px;
+}
+
+.galería_Top {
+    box-shadow: 5px 5px 25px rgba(0, 217, 255, 0.9);
+}
+
+picture img {
     width: 100%;
-    height: 600px;
-    background-color: rgb(255, 255, 255);
+}
+
+.conteiner_galeria {
+    position: relative;
+    max-width: 1000px;
+    width: 90%;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 5px 5px 25px rgba(2, 141, 255, 0.9);
+}
+
+.fotos {
+    display: flex;
+    transition: all 600ms;
+}
+
+.item_foto {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+}
+
+.iconitos_gal {
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.iconitoFotos {
+    display: flex;
+    position: relative;
+    bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+    border: solid 3px #ffffff;
+    border-style: ridge;
+    width: 50px;
+    height: 35px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 10px;
+    text-align: center;
+    transition: all 300ms;
+}
+
+.iconitoFotos:hover {
+    transform: scale(2);
+}
+
+.iconitoFotos img {
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform: scale(1);
+    transform: all 300ms;
+}
+
+.iconitoFotos img:hover {
+    opacity: 1;
+    transform: scale(1);
+}
+
+input[id="1"]:checked~.fotos {
+    animation: none;
+    transform: translate3d(0, 0, 0);
+}
+
+input[id="1"]:checked~.iconitos_gal .iconitoFotos[for="1"] {
+    background: #fff;
+}
+
+input[id="2"]:checked~.fotos {
+    animation: none;
+    transform: translate3d(calc(-100% * 1), 0, 0);
+}
+
+input[id="2"]:checked~.iconitos_gal .iconitoFotos[for="2"] {
+    background: #fff;
+}
+
+input[id="3"]:checked~.fotos {
+    animation: none;
+    transform: translate3d(calc(-100% * 2), 0, 0);
+}
+
+input[id="3"]:checked~.iconitos_gal.iconitoFotos[for="3"] {
+    background: #fff;
+}
+
+input[id="4"]:checked~.fotos {
+    animation: none;
+    transform: translate3d(calc(-100% * 3), 0, 0);
+}
+
+input[id="4"]:checked~.iconitos_gal .iconitoFotos[for="4"] {
+    background: #fff;
+}
+
+input[id="5"]:checked~.fotos {
+    animation: none;
+    transform: translate3d(calc(-100% * 4), 0, 0);
+}
+
+input[id="5"]:checked~.iconitos_gal .iconitoFotos[for="5"] {
+    background: #fff;
+}
+
+input[id="6"]:checked~.fotos {
+    animation: none;
+    transform: translate3d(calc(-100% * 5), 0, 0);
+}
+
+input[id="6"]:checked~.iconitos_gal .iconitoFotos[for="6"] {
+    background: #fff;
+}
+
+.galeria_txt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Mali';
+    font-size: 1.5em;
+    text-align: center;
+    padding: 25px 35px;
+    color: #ffffff;
+    background-color: #025e6c4e;
+    border-radius: 25px;
+    width: 90%;
+    max-width: 1000px;
+    height: 125px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 25px rgba(2, 141, 255, 0.9);
 }
 
 
@@ -388,6 +579,10 @@ button.menu_nav_link:hover {
     display: block;
     justify-content: space-around;
     padding: 30px 10%;
+    /* background-image: url(/imagenes/Contacto.svg); */
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-color: rgb(0, 0, 69);
     background-color: rgb(255, 119, 0);
 }
 
@@ -410,20 +605,23 @@ form {
     text-align: center;
     font-family: 'Mali';
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     width: 90%;
     padding: 10px;
     margin-bottom: 35px;
     border-radius: 10px;
-    background-color: #ff7700;
-    box-shadow: 8px 8px 8px rgba(252, 166, 166, 0.761)
+    background-color: rgb(26, 1, 101);
+    box-shadow: 0px 0px 25px rgba(252, 166, 166, 0.761);
+    border: solid 5px #0062ff;
+    border-style: ridge;
 }
 
 .cliente {
     width: 90%;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
-    padding: 3%;
+    padding: 2%;
     border-color: rgb(8, 0, 255) !important;
     background-color: #01107189;
     border: 7px;
@@ -431,10 +629,10 @@ form {
     border-radius: 15px;
     box-shadow: 8px 8px 8px rgba(1, 21, 43, 0.761);
     max-width: 600px;
-    color: #fff
+    color: #fff;
 }
 
-input,
+
 select,
 textarea {
     display: block;
@@ -448,19 +646,25 @@ textarea {
     border-radius: 7px;
 }
 
+.texto_lbl {
+    height: 40px;
+    border-radius: 10px;
+}
+
 input[type="submit"] {
     width: 75%;
-    margin-bottom: 25px;
-    margin-top: 7%;
-    height: 35px;
-    background: #ff7700;
+    margin: 7% auto 0;
+    height: 60px;
+    background: rgb(255, 119, 0);
     padding: 10px;
     color: rgb(255, 255, 255);
     border: none;
     border-radius: 10px;
+    font-family: 'Mali';
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
     box-shadow: 0px 0px 10px rgb(185, 220, 251);
+    border-style: ridge;
 }
 
 label {
@@ -516,16 +720,22 @@ footer {
     width: 100%;
 }
 
-
+/* //////////////////////////////////////////////////////////// */
+/* //////////////////// RESPONSIVE IPAD PRO /////////////////// */
+/* //////////////////////////////////////////////////////////// */
+@media screen and (max-width:1024px){
+    .galeria{
+        height: 925px;
+    }
+}
 /* //////////////////////////////////////////////////////////// */
 /* //////////////////// RESPONSIVE TABLETAS /////////////////// */
 /* //////////////////////////////////////////////////////////// */
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:820px) {
 
     body {
         padding-top: 90px 20px 0px;
-
     }
 
     .encabezado {
@@ -705,7 +915,44 @@ footer {
         transform: translateY(60%);
     }
 
+    /* //////////////////// RESPONSIVE MANTENIMIENTO //////////////////////////// */
 
+    .mtto_section {
+        height: 1900px;
+    }
+
+    .mttoPCsTOP {
+        height: 100px;
+        top: -60px;
+        font-size: 30px;
+        border-radius: 40px;
+    }
+
+    .mtto_info {
+        width: 700px;
+
+    }
+
+    .mtto_img1 {
+        width: 350px;
+    }
+
+    .mtto_txt {
+        width: 350px;
+        font-size: 1.6em;
+        font-weight: 400;
+        padding: 35px 25px 35px;
+    }
+
+     /* //////////////////// RESPONSIVE GALERÍA //////////////////////////// */
+    .galeria{
+        height: 810px;
+    }
+    .galería_Top{
+        top: -45px;
+        height: 90px;
+        border-radius: 25px;
+    }
 }
 
 /* //////////////////////////////////////////////////////////// */
@@ -717,8 +964,6 @@ footer {
         width: 180px;
         height: 450px;
     }
-
-    /*---------------------------------------------------------*/
 
     .desarrollo_web {
         height: 650px;
@@ -747,6 +992,49 @@ footer {
         transform: translateY(70%);
     }
 
+    /* //////////////////// RESPONSIVE MANTENIMIENTO //////////////////////////// */
+
+    .mtto_section {
+        height: 1900px;
+    }
+
+    .mttoPCsTOP {
+        height: 75px;
+        top: -50px;
+        font-size: 23px;
+        border-radius: 25px;
+    }
+
+    .mtto_info {
+        width: 500px;
+
+    }
+
+    .mtto_img1 {
+        width: 250px;
+    }
+
+    .mtto_txt {
+        width: 250px;
+        font-size: 1.28em;
+        font-weight: 400;
+        padding: 35px 25px 35px;
+    }
+
+     /* //////////////////// RESPONSIVE GALERÍA //////////////////////////// */
+     .galeria{
+        margin-top: 75px;
+        height: 650px;
+    }
+
+    .galería_Top{
+        height: 75px;
+        border-radius: 20px;
+        top: -40px;
+    }
+    .galeria_txt{
+        font-size: 1.2em;
+    }
 }
 
 /* //////////////////////////////////////////////////////////// */
@@ -757,13 +1045,22 @@ footer {
         display: flex;
         position: fixed;
         width: 100vw;
-        height: 50px;
+        height: 60px;
         top: 0;
         left: 0;
         align-items: center;
         justify-content: space-around;
         padding: 30px;
         background: rgb(3, 3, 87);
+    }
+
+    .menu {
+        top: 60px;
+        height: 100vh;
+    }
+
+    .toggle-menu {
+        top: 20px;
     }
 
     .logo_saludo {
@@ -807,7 +1104,7 @@ footer {
 
     .logo {
         width: 25px;
-        top: 25px;
+        top: 20px;
         left: 50px;
     }
 
@@ -865,7 +1162,7 @@ footer {
 
     /* //////////////////// DESARROLLO WEB CELULAR //////////////////////////// */
     .desarrollo_web {
-        justify-content:flex-start;
+        justify-content: flex-start;
         height: 1150px;
     }
 
@@ -875,7 +1172,7 @@ footer {
         font-size: 20px;
     }
 
-    .infoWebTxt{
+    .infoWebTxt {
         height: 500px;
     }
 
@@ -887,7 +1184,7 @@ footer {
         font-size: 1.1em;
         font-weight: 200;
         gap: 30px;
-        
+
     }
 
     .imgInfoWeb {
@@ -901,7 +1198,96 @@ footer {
         transform: translateY(70%);
     }
 
+    /* //////////////////// MANTENIMIENTO CELULAR //////////////////////////// */
 
 
+    .mtto_section {
+        height: 2000px;
+    }
+
+    .mtto {
+        margin-top: 50px;
+    }
+
+    .mttoPCsTOP {
+        height: 60px;
+        top: -30px;
+        font-size: 15px;
+        border-radius: 25px;
+    }
+
+    .mtto_info {
+        display: flex;
+        flex-direction: column;
+        width: 340px;
+        height: auto;
+        top: -300px;
+    }
+
+    .mtto_img1 {
+        width: 400px;
+        height: 400px;
+        justify-content: center;
+    }
+
+    .mtto_img2 {
+        display: flex;
+        height: 400px;
+        flex-flow: column-reverse;
+
+    }
+
+    .mtto_txt {
+        width: 350px;
+        font-size: 1.2em;
+        font-weight: 400;
+        padding: 35px 25px 35px;
+    }
+
+    /* //////////////////// GALERÍA CELULAR //////////////////////////// */
+    .galeria {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(0, 3, 82);
+        height: 475px;
+    }
+
+    .galería_Top {
+        height: 50px;
+        top: -25px;
+        font-size: 25px;
+        font-weight: 600;
+        border-radius: 15px;
+        box-shadow: 5px 5px 25px rgba(0, 217, 255, 0.9);
+    }
+
+    picture img {
+        width: 100%;
+    }
+
+    .conteiner_galeria {
+        position: relative;
+        max-width: 1000px;
+        width: 90%;
+        border-radius: 30px;
+        overflow: hidden;
+        box-shadow: 5px 5px 25px rgba(2, 141, 255, 0.9);
+    }
+
+    .iconitoFotos {
+        width: 30px;
+        height: 20px;
+        bottom: 30px;
+        border: solid 2px #ffffff;
+        border-radius: 5px;
+        margin: 0 5px;
+    }
+
+    .galeria_txt {
+        font-size: 0.85em;
+
+    }
 
 }
