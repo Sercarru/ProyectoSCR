@@ -33,22 +33,23 @@
                 </li>
 
                 <li>
-                    <img class="img_menu" src="imagenes/develop.svg" alt=""><a href="#trabajos" class="menu_nav_link"
-                        id="menu_nav_link">Desarrollo WEB</a>
+                    <img class="img_menu" src="imagenes/develop.svg" alt=""><a href="#trabajos"
+                        class="menu_nav_link">Desarrollo WEB</a>
                 </li>
 
                 <li>
                     <img class="img_menu" src="imagenes/pc.svg" alt=""><a href="#mtto"
                         class="menu_nav_link">Mantenimiento</a>
                 </li>
-                <li>
-                    <img class="img_menu" src="imagenes/Galeria.svg" alt=""><a href="#galeria" class="menu_nav_link"
-                        id="menu_nav_link">Galería</a>
-                </li>
 
                 <li>
                     <img class="img_menu" src="imagenes/aboutus.svg" alt=""><a href="#nosotros"
                         class="menu_nav_link">Nosotros</a>
+                </li>
+
+                <li>
+                    <img class="img_menu" src="imagenes/Galeria.svg" alt=""><a href="#galeria"
+                        class="menu_nav_link">Galería</a>
                 </li>
 
                 <li>
@@ -123,9 +124,9 @@
     <section class="desarrollo_web" id="trabajos">
         <div class="DevWebTop">DESARROLLO WEB</div>
         <div class="tarjetasInfoWeb">
-            <article class="ArticleinfoWeb"> 
+            <article class="ArticleinfoWeb">
                 <div class="DesWebImg">
-                    
+
                     <img src="imagenes/DesWebImg2.png" alt="" class="imgInfoWeb">
                 </div>
                 <div>
@@ -152,28 +153,29 @@
 --------------------- MANTENIMIENTO DE PCs --------------------------
 --------------------------------------------------------------- 
 -->
-    <section id="mtto">
+    <section class="mtto_section" id="mtto">
         <article class="mtto">
             <div class="mttoPCsTOP">Mantenimiento preventivo y correctivo</div>
         </article>
-        
-        <div class="desarrolloW"></div>
-        <p class="desarrolloW">Mantenimiento de computadoras</p>
+        <article class="mtto_info">
+            <div class="mtto_img1"><img src="/imagenes/Mantto1.jpg" alt=""></div>
+            <p class="mtto_txt">Tu computadora se ha vuelto "lenta"?, ¿Abre ventanas "por sí sola"?, ¿No te permite
+                ingresar a tu correo electrónico?, ¿Tu antivirus "no funciona"? ¿Tu computadora se "contagió de algo"?
+                Nosotros te ayudamos, y además te asesoramos para que no vuelva a pasar, explicándote las medidas de
+                seguridad necesarias.
+                Te instalamos el software necesario y lo configuramos para que funcione de manera óptima.</p>
+        </article>
+        <article class="mtto_info">
+            <p class="mtto_txt">El mantenimiento preventivo tiene por objeto, evitar fallas causadas por el uso normal
+                de la computadora y es imposible evitarlas, y como su nombre lo indica, previene problemas mayores, pues
+                se detectan a tiempo desgastes, sobrecalentamientos, etc. que son la principal causa de las fallas
+                mayores.</p>
+            <div class="mtto_img2"><img src="/imagenes/Mantto2.jpg" alt=""></div>
+        </article>
 
     </section>
 
-    <!--
----------------------------------------------------------------
--------------------------- GALERÍA ---------------------------
---------------------------------------------------------------- 
--->
-    <section class="galeria" id="galeria">
-
-        <p class="Galería">Galería</p>
-
-    </section>
-
-
+  
     <!--
 ---------------------------------------------------------------
 ------------------------- NOSOTROS ----------------------------
@@ -185,6 +187,81 @@
         <p class="nosotorsoW">Nosotros</p>
 
     </section>
+
+  <!--
+---------------------------------------------------------------
+-------------------------- GALERÍA ---------------------------
+--------------------------------------------------------------- 
+-->
+<section class="galeria" id="galeria"> 
+
+    <p class="galería_Top">Galería</p>
+    <div class="conteiner_galeria"> 
+        <input type=radio id="1" name="foto_img" hidden> 
+        <input type=radio id="2" name="foto_img" hidden>
+        <input type=radio id="3" name="foto_img" hidden>
+        <input type=radio id="4" name="foto_img" hidden>
+        <input type=radio id="5" name="foto_img" hidden>
+        <input type=radio id="6" name="foto_img" hidden>
+
+        <div class="fotos"> 
+            <div class="item_foto"> 
+                <picture class="img_gal"><img src="imagenes/Foto1.webp" alt=""></picture>
+            </div>
+            
+            <div class="item_foto">
+                <picture class="img_gal"><img src="imagenes/Foto2.webp" alt=""></picture>
+            </div>
+
+            <div class="item_foto">
+                <picture class="img_gal"><img src="imagenes/Foto3.webp" alt=""></picture>
+            </div>
+
+            <div class="item_foto">
+                <picture class="img_gal"><img src="imagenes/foto4.webp" alt=""></picture>
+            </div>
+
+            <div class="item_foto">
+                <picture class="img_gal"><img src="imagenes/Foto5.webp" alt=""></picture>
+            </div>
+
+            <div class="item_foto">        
+                <picture class="img_gal"><img src="imagenes/Foto6.webp" alt=""></picture>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="iconitos_gal">         
+        <label for="1" class="iconitoFotos">       
+            <picture class="img_gal"><img src="imagenes/Foto1.webp" alt=""></picture>
+        </label>
+        <label for="2" class="iconitoFotos">
+            <picture class="img_gal"><img src="imagenes/Foto2.webp" alt=""></picture>
+        </label>
+        <label for="3" class="iconitoFotos">
+            <picture class="img_gal"><img src="imagenes/Foto3.webp" alt=""></picture>
+        </label>
+        <label for="4" class="iconitoFotos">
+            <picture class="img_gal"><img src="imagenes/Foto4.webp" alt=""></picture>
+        </label>
+        <label for="5" class="iconitoFotos">
+            <picture class="img_gal"><img src="imagenes/Foto5.webp" alt=""></picture>
+        </label>
+        <label for="6" class="iconitoFotos">
+            <picture class="img_gal"><img src="imagenes/Foto6.webp" alt=""></picture>
+        </label>
+    </div>
+    <article class="galeria_txt">
+        <p>Esto es algo de lo que hacemos. Con toda confianza puedes conssultar por más opciones. Con gusto te atenderemos lo antes posible...</p>
+    </article>
+    
+
+</section>
+
+
+
+
     <!--
 ---------------------------------------------------------------
 ----------------------- FORMULARIO ----------------------------
@@ -195,9 +272,9 @@
             <form class="cliente" action="https://google.com"> <!--Sólo como ejemplo-->
                 <legend class="tit_form">ESCRÍBENOS: ¿CÓMO TE PODEMOS AYUDAR?</legend>
                 <label for="control_nombre">Nombre</label>
-                <input type="text" id="control_nombre" required>
+                <input class="texto_lbl" type="text" id="control_nombre" required>
                 <label for="correo">Correo electrónico</label>
-                <input type="text" id="correo" required>
+                <input class="texto_lbl" type="text" id="correo" required>
                 <label for="">Elige el servicio requerido<br></label>
                 <select>
                     <option value="">Desarrollo Web</option>
