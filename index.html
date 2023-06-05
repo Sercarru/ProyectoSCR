@@ -243,7 +243,7 @@
             <picture class="img_gal"><img src="imagenes/Foto3.webp" alt=""></picture>
         </label>
         <label for="4" class="iconitoFotos">
-            <picture class="img_gal"><img src="imagenes/foto4.png" alt=""></picture>
+            <picture class="img_gal"><img src="imagenes/Foto4.png" alt=""></picture>
         </label>
         <label for="5" class="iconitoFotos">
             <picture class="img_gal"><img src="imagenes/Foto5.webp" alt=""></picture>
@@ -272,9 +272,9 @@
             <form class="cliente" action="https://formspree.io/f/xvonjrpa" method="POST">
                 <legend class="tit_form">ESCRÍBENOS: ¿CÓMO TE PODEMOS AYUDAR?</legend>
                 <label for="control_nombre">Nombre</label>
-                <input class="texto_lbl" type="text" id="control_nombre" required>
+                <input class="texto_lbl" type="text" name="nombre" id="control_nombre" required>
                 <label for="correo">Correo electrónico</label>
-                <input class="texto_lbl" type="text" id="correo" required>
+                <input class="texto_lbl" type="text" name="correo" id="correo" required>
                 <label for="">Elige el servicio requerido<br></label>
                 <select>
                     <option value="">Desarrollo Web</option>
@@ -287,7 +287,7 @@
                 <textarea id="Mensaje-cliente" placeholder="Escribe aquí en qué te podemos ayudar..."
                     required></textarea>
 
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar" name="enviar_btn">
             </form>
         </div>
 
