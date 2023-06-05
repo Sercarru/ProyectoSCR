@@ -276,7 +276,7 @@
                 <label for="correo">Correo electrónico</label>
                 <input class="texto_lbl" type="text" name="correo" id="correo" required>
                 <label for="">Elige el servicio requerido<br></label>
-                <select>
+                <select name="servicio" id="servicio">
                     <option value="">Desarrollo Web</option>
                     <option value="">Reparación de computadoras</option>
                     <option value="">Asesoría en Office</option>
@@ -284,10 +284,9 @@
                 </select>
 
                 <label for="Mensaje-cliente">Mensaje</label>
-                <textarea id="Mensaje-cliente" placeholder="Escribe aquí en qué te podemos ayudar..."
-                    required></textarea>
+                <textarea minlength="10" maxlength="300"  id="Mensaje-cliente" placeholder="Escribe aquí en qué te podemos ayudar..." name="Mensaje-cliente" required cols="30" rows="5"></textarea>
 
-                <input type="submit" value="Enviar" name="enviar_btn">
+                <input type="submit" value="Enviar">
             </form>
         </div>
 
