@@ -47,7 +47,7 @@ a,
     justify-content: space-around;
     padding: 30px 15%;
     background: rgb(3, 3, 87);
-    z-index: 1;
+    z-index: 10;
 }
 
 .img_menu,
@@ -121,7 +121,7 @@ button.menu_nav_link:hover {
     grid-template-rows: repeat(10, 20px);
     background-color: rgb(3, 3, 87);
     justify-content: center;
-    z-index: 2;
+    z-index: 20;
 
 }
 
@@ -336,7 +336,7 @@ button.menu_nav_link:hover {
 }
 
 .mttoPCsTOP,
-.galería_Top {
+.galería_Top{
     display: flex;
     position: relative;
     align-items: center;
@@ -395,6 +395,91 @@ button.menu_nav_link:hover {
     padding: 35px 50px 35px;
     font-weight: 600;
     text-shadow: #f50000;
+}
+
+/* //////////////////// NOSOTROS  //////////////////////////// */
+
+.nosotros {
+    display: block;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 30px 10%;
+    width: 100%;
+    height: 1500px;
+    color: #fff;
+    background-color: #090049;
+}
+
+
+.nosotros_Top{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    z-index: 0;
+    width: 90%;
+    max-width: 1100px;
+    height: 100px;
+    top: -75px;
+    background-color: #0080ff;
+    color: #fff;
+    font-family: 'Mali';
+    font-size: 40px;
+    font-weight: 600;
+    border-radius: 40px;
+}
+
+.article_nosotros{
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.nos_img{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border-radius: 50%;
+    background-color:#4fadff;
+    margin: 15px;
+    z-index: 1;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.9);
+    border-style: ridge;
+}
+
+.nos_txtD, .nos_txtD1,.nos_txtI{
+    display: flex;
+    width: 90%;
+    height: auto;
+    position: relative;
+    background-color: #ff7700;
+    font-family: 'Mali';
+    font-size: 20px;
+}
+
+.nos_txtD{
+    border-radius: 15px;
+    left: -50px;
+    top: 75px;
+    padding: 15px 25px 15px 50px;
+}
+
+.nos_txtD1{
+    border-radius: 15px;
+    left: -50px;
+    top: 50px;
+    padding: 15px 25px 15px 50px;
+}
+
+.nos_txtI{
+    border-radius: 15px;
+    left: 150px;
+    top: 50px;
+    padding: 15px 100px 15px 25px;
 }
 
 /* //////////////////// GALERÍA //////////////////////////// */
@@ -554,23 +639,6 @@ input[id="6"]:checked~.iconitos_gal .iconitoFotos[for="6"] {
     height: 125px;
     margin-top: 10px;
     box-shadow: 5px 5px 25px rgba(2, 141, 255, 0.9);
-}
-
-
-
-/* //////////////////// NOSOTROS //////////////////////////// */
-
-.nosotros {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 30px 10%;
-    width: 100%;
-    height: 600px;
-    background-color: BLUE;
-    color: #fff;
 }
 
 /* //////////////////// CONTACTO CTA //////////////////////////// */
@@ -953,6 +1021,32 @@ footer {
         height: 90px;
         border-radius: 25px;
     }
+
+/* //////////////////// NOSOTROS  //////////////////////////// */
+
+.nosotros{
+    height: 1250px;
+    margin-top: 100px;
+    max-width: 800px;
+}
+
+.nosotros_Top{
+    height: 75px;
+    border-radius: 25px;
+    font-size: 30px;
+}
+
+.nos_img{
+    width: 250px;
+    height: 250px; 
+}
+
+.nos_txtD, .nos_txtD1,.nos_txtI{
+    font-size: 14px;
+
+}
+
+
 }
 
 /* //////////////////////////////////////////////////////////// */
@@ -1034,6 +1128,40 @@ footer {
     }
     .galeria_txt{
         font-size: 1.2em;
+    }
+
+    /* //////////////////// NOSOTROS  //////////////////////////// */
+
+    .nosotros{
+        height: 1100px;
+        margin-top: 75px;
+    }
+    
+    .nosotros_Top{
+        height: 75px;
+        border-radius: 25px;
+        font-size: 30px;
+    }
+    
+    .nos_img{
+        width: 200px;
+        height: 200px; 
+    }
+    
+    .nos_txtD, .nos_txtD1,.nos_txtI{
+        font-size: 10px;
+        border-radius: 10px;
+    }
+
+    .nos_txtD{
+        left: -50px;
+        top: 50px;
+    }
+
+    .nos_txtI{
+        left: 70px;
+        top: 50px;
+        padding: 15px 30px 15px 25px;
     }
 }
 
@@ -1289,5 +1417,82 @@ footer {
         font-size: 0.85em;
 
     }
+
+/* //////////////////// NOSOTROS  //////////////////////////// */
+
+        .nosotros{
+            height: 1150px;
+        }
+        
+        .nosotros_Top{
+            height: 50px;
+            border-radius: 15px;
+            font-size: 20px;
+            top: -50px;
+        }
+        
+        .article_nosotros{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            max-width: 400px;
+        }
+
+        .nos_img{
+            width: 150px;
+            height: 150px; 
+            margin: 0;
+        }
+
+        .img1, .img2, .img3, .img4{
+            margin: 0 auto;
+        }
+        .img1{
+            top: 5px;
+            right: 25px;
+            padding: 0;
+        }
+
+        .txt1,.txt2,.txt3,.txt4{
+            padding: 10px 10px;
+        }
+        .txt1{
+            top: 0px;
+            left: 0px;
+            width: 90%;
+            font-size: 10px;
+        }
+
+        .img2{
+            top: 280px;
+            right: 25px;
+        }
+        .txt2{
+            top: 275px;
+            left: 0;
+        }
+
+        .img3, .img4{
+            top: 450px;
+            left: 90px;
+            margin: 0;
+        }
+        .txt3{
+            top: 680px;
+            left: 0;
+
+        }
+
+        .img4{
+            top: 695px;
+        }
+        .txt4{
+            top: 925px;
+            left: 0;
+        }
+
+        
+
+        
 
 }
